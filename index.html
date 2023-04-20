@@ -179,7 +179,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -189,7 +189,7 @@
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/%20" rel="section">
+          <a href="/about/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
@@ -199,7 +199,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/%20" rel="section">
+          <a href="/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -209,7 +209,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/%20" rel="section">
+          <a href="/categories/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
@@ -219,7 +219,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -515,7 +515,8 @@
 
 <h2 id="基础配置记录"><a href="#基础配置记录" class="headerlink" title="基础配置记录"></a>基础配置记录</h2><p>主题：next</p>
 <p>风格：Gemini</p>
-<h2 id="添加标签、类别、关于、年鉴"><a href="#添加标签、类别、关于、年鉴" class="headerlink" title="添加标签、类别、关于、年鉴"></a>添加标签、类别、关于、年鉴</h2><p>首先创建tags页面：hexo <strong>new</strong> page tags</p>
+<h2 id="添加标签、类别、关于"><a href="#添加标签、类别、关于" class="headerlink" title="添加标签、类别、关于"></a>添加标签、类别、关于</h2><p>以标签为例，其他类似。</p>
+<p>首先创建tags页面：hexo <strong>new</strong> page tags</p>
 <p>然后在配置文件中取消tags注释。最后在生成的标签页面中设置index.md类型为tags，如下：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">标签</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2021-01-25 22:54:58</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">&quot;tags&quot;</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 
@@ -524,8 +525,9 @@
 
 
 
-
-
+<p>Tips：</p>
+<p>配置文件中取消注释后的tags、categories等存在多余的空格，导致找不到页面，需要将多余空格去掉。如下：</p>
+<p><img src="/image/image-20230420141415826.png" alt="image-20230420141415826"></p>
 
           
         
@@ -609,7 +611,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives/%7C%7C%20archive">
               
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
@@ -632,10 +634,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">tags</span>
-                
+                </a>
               </div>
             
 
